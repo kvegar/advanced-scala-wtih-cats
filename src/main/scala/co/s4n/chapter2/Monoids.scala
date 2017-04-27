@@ -13,24 +13,5 @@ object Monoid {
   def apply[A](implicit monoid: Monoid[A]) = monoid
 }
 
-object K {
-  val and = new Monoid[Boolean] {
-    override def combine(x: Boolean, y: Boolean) = x && y
-    override def empty = true
-  }
 
-  val or = new Monoid[Boolean] {
-    override def combine(x: Boolean, y: Boolean) = x || y
-    override def empty = false
-  }
-
-  val equal = new Monoid[Boolean] {
-    override def combine(x: Boolean, y: Boolean) = x == y
-    override def empty = true
-  }
-
-  val notEqual = new Monoid[Boolean] {
-    override def combine(x: Boolean, y: Boolean) = x != y
-    override def empty = false
-  }
-}
+case class Order(totalCost: Double, quantity: Double)
