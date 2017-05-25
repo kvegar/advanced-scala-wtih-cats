@@ -1,8 +1,8 @@
 package co.s4n.chapter1
 
 /**
-  * Created by karenvega on 4/18/17.
-  */
+ * Created by karenvega on 4/18/17.
+ */
 final case class Cat(name: String, age: Int, color: String)
 
 trait Printable[A] {
@@ -34,6 +34,4 @@ object PrintableSyntax {
 
   }
 }
-
-
 

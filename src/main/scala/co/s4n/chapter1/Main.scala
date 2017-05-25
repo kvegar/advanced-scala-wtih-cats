@@ -7,8 +7,6 @@ import com.typesafe.scalalogging.LazyLogging
 
 object Main extends App with LazyLogging {
 
-
-
   val cat: String = Cat("cat", 25, "red").format
   println(cat)
 

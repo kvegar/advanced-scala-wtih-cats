@@ -1,6 +1,5 @@
 package co.s4n.chapter2
 
-
 trait Semigroup[A] {
   def combine(x: A, y: A): A
 }
@@ -13,5 +12,4 @@ object Monoid {
   def apply[A](implicit monoid: Monoid[A]) = monoid
 }
 
-
-case class Order(totalCost: Double, quantity: Double)
+//case class Order(totalCost: Double, quantity: Double)
